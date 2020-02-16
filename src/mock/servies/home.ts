@@ -17,4 +17,25 @@ const homeAdvertisments = (options: any) => {
   );
 };
 
+const entityList = (options: any) => {
+  const body = getBody(options);
+  console.log(body, "??");
+  return builder(
+    {
+      total: 100,
+      list: new Array(body.size).fill({
+        href:
+          "https://res0.vmallres.com/pimages//wapFrontLocation/content/f7MxrMaE1S77xJTDoLcR.jpg",
+        name: "荣耀9X PRO",
+        price: "￥1999"
+      }),
+      page: body.page,
+      size: body.size
+    },
+    "",
+    200
+  );
+};
+
 Mock.mock(/\/home\/advertiments/, "post", homeAdvertisments);
+Mock.mock(/\/home\/entityList/, "post", entityList);

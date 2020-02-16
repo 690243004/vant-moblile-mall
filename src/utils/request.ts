@@ -30,11 +30,10 @@ instance.interceptors.request.use(
  */
 
 instance.interceptors.response.use(
-  (response: AxiosResponse) => {
-    const { code } = response.data;
-    // 对响应数据做哪些事
+  (response: any) => {
+    return response;
   },
-  error => {
+  (error: any) => {
     return Promise.reject(error);
   }
 );
