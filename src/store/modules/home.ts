@@ -1,18 +1,6 @@
 import { getScrollImages, getEntityList } from "@/api/home";
 import { ActionContext } from "vuex";
-
-interface Entity {
-  href: string;
-  name: string;
-  price: number;
-}
-
-export interface EntityParams {
-  total: number;
-  list: Entity[];
-  page: number;
-  size: number;
-}
+import { EntityParams } from "@/types";
 
 interface State {
   scrollImages: string[];

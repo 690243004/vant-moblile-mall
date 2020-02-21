@@ -10,3 +10,11 @@
 - 添加首页商品卡片列表action
 - 为onReachBottom组件添加onload事件
 - 添加回到顶部组件
+
+# 当前任务
+- 在`tabbar`中创建`router-link`标签
+- gototop 加radius
+- 完成购物车页面 : header组件
+- 添加购物车接口mock数据
+- 完成购物车页面 : 购物车项组件
+- 添加购物车vuex获取数据接口

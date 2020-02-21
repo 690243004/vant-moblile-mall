@@ -61,12 +61,13 @@ export default {
   right: 20px;
   width: 30px;
   height: 30px;
-  opacity: 0.7;
+  opacity: 0.9;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 100;
   cursor: pointer;
+  border-radius: 4px;
 }
 .back-to-top i {
   transform: rotate(180deg);

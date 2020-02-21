@@ -7,5 +7,6 @@ if (process.env.NODE_ENV !== "production") {
   }
   require("mockjs2");
   require("./servies/home");
+  require("./servies/cart");
   console.log("mock is mount");
 }

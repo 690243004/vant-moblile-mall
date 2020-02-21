@@ -19,7 +19,6 @@ const homeAdvertisments = (options: any) => {
 
 const entityList = (options: any) => {
   const body = getBody(options);
-  console.log(body, "??");
   return builder(
     {
       total: 100,

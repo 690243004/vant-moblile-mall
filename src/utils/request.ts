@@ -1,5 +1,5 @@
 import axios from "yy-axios";
-import { AxiosResponse } from "yy-axios/dist/types/types";
+// import { AxiosResponse } from "yy-axios/dist/types/types";
 const instance = axios.create({
   baseURL: "/",
   timeout: 5000,

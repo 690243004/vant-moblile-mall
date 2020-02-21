@@ -1,6 +1,5 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
 import asyncLoader from "@u/asyncLoader";
 
 Vue.use(VueRouter);
@@ -12,13 +11,22 @@ const routes = [
     component: asyncLoader("Home")
   },
   {
-    path: "/about",
-    name: "About",
+    path: "/cart",
+    name: "cart",
+    component: asyncLoader("Cart")
+  },
+  {
+    path: "/order",
+    name: "order",
+    component: asyncLoader("Order")
+  },
+  {
+    path: "/my",
+    name: "my",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue")
+    component: asyncLoader("My")
   }
 ];
 

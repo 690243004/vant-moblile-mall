@@ -1,15 +1,19 @@
+import { ResponseBody } from "@/types";
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export const builder = (data: any, msg: string, code = 0) => {
-  const responseBody = {
+export const builder = <T = any>(
+  data: T,
+  msg?: string,
+  code = 0
+): ResponseBody<T> => {
+  const responseBody: ResponseBody = {
     msg: "",
     timestamp: 0,
-    data: null,
-    code: 0
+    code: 0,
+    data: null
   };
-  if (data !== undefined && data !== null) {
-    responseBody.data = data;
-  }
-  if (data !== undefined && data !== null) {
+  responseBody.data = data;
+  if (msg !== undefined && msg !== null) {
     responseBody.msg = msg;
   }
   if (code !== undefined && code !== null) {
