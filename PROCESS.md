@@ -12,7 +12,7 @@
 - 添加回到顶部组件
 
 # 当前任务
-- 在`tabbar`中创建`router-link`标签
+- 在`tabbar`中添加导航功能
 - gototop 加radius
 - 完成购物车页面 : header组件
 - 添加购物车接口mock数据
