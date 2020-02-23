@@ -24,15 +24,27 @@ export interface CartList {
   };
 }
 
+// 首页卡片类型
 export interface Entity {
   href: string;
   name: string;
   price: number;
 }
-
+// 首页卡片接口响应类型
 export interface EntityParams {
   total: number;
   list: Entity[];
   page: number;
   size: number;
+}
+
+// 商品详情响应类型
+export interface Product {
+  listPic: string[];
+  name: string;
+  price: number;
+  strategy: any;
+  meta: any;
+  description: string[];
+  sendPlace: string;
 }

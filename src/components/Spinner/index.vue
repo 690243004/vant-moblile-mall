@@ -1,11 +1,11 @@
 <template>
   <div class="spinner-wrapper">
     <div class="spinner">
-      <div class="rect1"></div>
-      <div class="rect2"></div>
-      <div class="rect3"></div>
-      <div class="rect4"></div>
-      <div class="rect5"></div>
+      <div :style="{ backgroundColor: themeColor }" class="rect1"></div>
+      <div :style="{ backgroundColor: themeColor }" class="rect2"></div>
+      <div :style="{ backgroundColor: themeColor }" class="rect3"></div>
+      <div :style="{ backgroundColor: themeColor }" class="rect4"></div>
+      <div :style="{ backgroundColor: themeColor }" class="rect5"></div>
     </div>
   </div>
 </template>
@@ -20,7 +20,7 @@
 }
 
 .spinner > div {
-  background-color: #67cf22;
+  /* background-color: #67cf22; */
   height: 100%;
   width: 6px;
   display: inline-block;

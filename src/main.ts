@@ -8,11 +8,15 @@ import "vant/lib/index.css";
 import "@/assets/scss/app.scss";
 import "@/mock";
 import { PullRefresh } from "vant";
+import BackToTop from "@c/BackToTop/index.vue";
+// 导入有赞本地样式
+import "vant/lib/icon/local.css";
 
 Vue.config.productionTip = false;
 
-Vue.prototype.themeColor = "#4fc08d";
+Vue.prototype.themeColor = "#eb3c3c";
 Vue.use(PullRefresh);
+Vue.component("BackToTop", BackToTop);
 new Vue({
   router,
   store,

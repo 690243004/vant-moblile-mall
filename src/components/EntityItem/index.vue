@@ -1,6 +1,6 @@
 <template>
   <li class="entity-item">
-    <a>
+    <router-link to="/detail">
       <div class="image-area">
         <p class="p-img">
           <van-image
@@ -17,7 +17,7 @@
           <span><b>￥1999</b></span>
         </p>
       </div>
-    </a>
+    </router-link>
   </li>
 </template>
 
@@ -35,10 +35,6 @@ export default {
   flex: 1;
   max-width: 50%;
   overflow: hidden;
-
-  a {
-    cursor: pointer;
-  }
 }
 .entity-item:nth-child(2n) {
   padding-left: 6.25px;

@@ -58,9 +58,9 @@ export default {
 .back-to-top {
   position: fixed;
   bottom: 100px;
-  right: 20px;
-  width: 30px;
-  height: 30px;
+  right: 15px;
+  width: 35px;
+  height: 35px;
   opacity: 0.9;
   display: flex;
   justify-content: center;
@@ -70,6 +70,7 @@ export default {
   border-radius: 4px;
 }
 .back-to-top i {
+  font-size: 20px;
   transform: rotate(180deg);
   color: #fff;
 }

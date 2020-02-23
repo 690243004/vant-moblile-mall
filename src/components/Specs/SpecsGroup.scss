@@ -1,0 +1,17 @@
+.specs-group {
+  &-label { 
+    font-size: 12px;
+    color: #999;
+    line-height: 30px;
+    margin-left: 10px;
+  }
+
+  &-main { 
+    display: flex;
+    flex-wrap: wrap;
+    > .specs-item {
+      margin: 0 0 10px 10px;
+    }
+  }
+
+}
