@@ -58,7 +58,7 @@ export default {
   },
   methods: {
     onSubmit() {
-      this.$router.push("successPurchase");
+      this.$router.push("submitOrder");
       return;
     }
   }
