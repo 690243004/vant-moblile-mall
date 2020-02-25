@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import asyncLoader from "@u/asyncLoader";
 import Layout from "@/views/Layout.vue";
+import store from "../store";
 Vue.use(VueRouter);
 
 const routes = [
@@ -24,6 +25,11 @@ const routes = [
     path: "/successPurchase",
     name: "successPurchase",
     component: asyncLoader("Submit/SuccessPurchase.vue")
+  },
+  {
+    path: "/login",
+    name: "login",
+    component: asyncLoader("Login/")
   },
   {
     path: "/",
@@ -60,6 +66,21 @@ const routes = [
 
 const router = new VueRouter({
   routes
+});
+
+const whiteList = ["/login", "/home", "/"];
+
+router.beforeEach((to, from, next) => {
+  const state = store.state;
+  if (whiteList.includes(to.path)) {
+    next();
+  } else {
+    if (state.hasLogin) {
+      next();
+    } else {
+      next("/login");
+    }
+  }
 });
 
 export default router;

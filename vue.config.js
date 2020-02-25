@@ -4,6 +4,12 @@ module.exports = {
   configureWebpack: config => {
     if (process.env.NODE_ENV === "production") {
       // 为生产环境修改配置...
+      config.externals = {
+        // import value from key
+        vue: "Vue",
+        vuex: "Vuex",
+        "vue-router": "VueRouter"
+      };
     } else {
       // 为开发环境修改配置...
       config.devtool = "source-map";

@@ -10,7 +10,7 @@ import "@/mock";
 import { PullRefresh } from "vant";
 import BackToTop from "@c/BackToTop/index.vue";
 // 导入有赞本地样式
-import "vant/lib/icon/local.css";
+// import "vant/lib/icon/local.css";
 
 Vue.config.productionTip = false;
 
