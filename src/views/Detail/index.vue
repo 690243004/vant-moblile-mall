@@ -100,6 +100,7 @@
           <SpecsItem>幻影紫</SpecsItem>
           <SpecsItem>炫酷紫</SpecsItem>
         </SpecsGroup>
+
         <SpecsGroup v-model="verValue" label="版本">
           <SpecsItem>全网通 (4GB 64GB)</SpecsItem>
           <SpecsItem>全网通 (4GB 64GB)</SpecsItem>
